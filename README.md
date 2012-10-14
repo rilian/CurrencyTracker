@@ -20,13 +20,16 @@ Please, make sure your output is production ready:
 * It does not break existing tests, both unit tests and cucumber features.
 * It tests new functionality.
 * At all times test routines should pass 'green'
-
-    rake test
-    cucumber
+```
+rake test
+cucumber
+```
 
 * It works from scratch. Literally, it should work after following command sequence
-    rake db:reset
-    rails server
+```
+rake db:reset
+rails server
+```
 
 * It has a sample user with collection history
 * What claimed as done is fully working. Better to have 2 working features than 3 not working.
