@@ -16,7 +16,7 @@ class Country < ActiveRecord::Base
   # Other properties (e.g. accepts_nested_attributes_for)
   self.primary_key = 'code'
 
-  attr_accessible :name, :code, :visited
+  attr_accessible :name, :code, :visited, :created_at, :updated_at
 
   accepts_nested_attributes_for :currencies, :allow_destroy => true
 
