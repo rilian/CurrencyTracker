@@ -5,7 +5,7 @@ gem 'sqlite3'
 gem 'savon'
 gem 'nokogiri'
 
-group :development do
+group :test do
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'capybara'

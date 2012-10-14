@@ -9,3 +9,8 @@ Features
 * Track Visited Countries
 * Track Collected Currencies
 * Charts show you how far along you are!
+
+Development
+-----------
+
+Run tests via `rake test && cucumber`
