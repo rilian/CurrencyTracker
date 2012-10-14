@@ -43,3 +43,6 @@ rescue NameError
   raise "You need to add database_cleaner to your Gemfile (in the :test group) if you wish to use it."
 end
 
+# Cleanup all if `cucumber` is running after unit test fixtures have been loaded
+Country.delete_all
+Currency.delete_all
