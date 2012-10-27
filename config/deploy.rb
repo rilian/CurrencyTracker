@@ -24,10 +24,9 @@ set :use_sudo, false
 require 'bundler/capistrano'
 
 # use rvm
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require 'rvm/capistrano'
 set :rvm_ruby_string, '1.9.3'
-set :rvm_type, :user
+set :rvm_type, :system
 
 namespace :rvm do
   task :trust_rvmrc do
