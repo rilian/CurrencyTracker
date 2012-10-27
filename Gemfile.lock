@@ -33,7 +33,7 @@ GEM
       gyoku (>= 0.4.0)
       nokogiri (>= 1.4.0)
     arel (3.0.2)
-    builder (3.0.3)
+    builder (3.0.4)
     capistrano (2.13.5)
       highline
       net-scp (>= 1.0.0)
@@ -47,7 +47,7 @@ GEM
       rack-test (>= 0.5.4)
       selenium-webdriver (~> 2.0)
       xpath (~> 0.1.4)
-    childprocess (0.3.5)
+    childprocess (0.3.6)
       ffi (~> 1.0, >= 1.0.6)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -68,20 +68,20 @@ GEM
       nokogiri (>= 1.5.0)
     daemons (1.1.9)
     database_cleaner (0.9.1)
-    debugger (1.2.0)
+    debugger (1.2.1)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.1.1)
-      debugger-ruby_core_source (~> 1.1.3)
+      debugger-ruby_core_source (~> 1.1.4)
     debugger-linecache (1.1.2)
       debugger-ruby_core_source (>= 1.1.1)
-    debugger-ruby_core_source (1.1.3)
+    debugger-ruby_core_source (1.1.4)
     diff-lcs (1.1.3)
     erubis (2.7.0)
     eventmachine (1.0.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.1.5)
-    gherkin (2.11.4)
+    gherkin (2.11.5)
       json (>= 1.4.6)
     gyoku (0.4.6)
       builder (>= 2.1.2)
@@ -139,6 +139,8 @@ GEM
     rdoc (3.12)
       json (~> 1.4)
     rubyzip (0.9.9)
+    rvm-capistrano (1.2.7)
+      capistrano (>= 2.0.0)
     sass (3.2.1)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -173,7 +175,7 @@ GEM
     treetop (1.4.11)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.33)
+    tzinfo (0.3.34)
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
@@ -193,17 +195,18 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   capybara
-  coffee-rails (~> 3.2.1)
+  coffee-rails
   cucumber
   cucumber-rails
   database_cleaner
   debugger
   nokogiri
   rails (= 3.2.8)
-  sass-rails (~> 3.2.3)
+  rvm-capistrano
+  sass-rails
   savon
   sqlite3
   therubyracer
   thin
-  uglifier (>= 1.0.3)
+  uglifier
   unicorn
